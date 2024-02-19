@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #212529;
+$medium-grey: #f2f8fe;
+$light-grey: #f8f9fa;
+$vibrant-blue: #007bff;
+$secondary-color: #3636ff;
+$color-teal: #42ad00;
+$color-delete: #ff0000;
+
+@mixin flexBox($direction, $justify-content) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito", "Roboto", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+  color: hsla(240, 48%, 25%, 0.6);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary-color;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: $secondary-color;
+    &:hover {
+      background-color: $color-teal;
+    }
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    max-width: 100%;
+  }
+}

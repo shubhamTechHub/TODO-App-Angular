@@ -1,0 +1,9 @@
+<h1>Create <span>Task</span></h1>
+<input
+  type="text"
+  class="todo-user-input"
+  placeholder="What needs to be done?"
+  [(ngModel)]="newTask"
+  (keydown.enter)="addTask()"
+/>
+<h1>My <span>Tasks</span></h1>

@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+
+nav {
+  @include flexBox(row, space-between);
+  padding: 8px 25px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: $primary-color;
+  position: fixed;
+  width: 100%;
+  div {
+    @include flexBox(row, flex-start);
+    color: $light-grey;
+  }
+  span {
+    font-weight: 800;
+    font-size: 1.7rem;
+  }
+  .search-bar {
+    width: 333px;
+    background-color: $light-grey;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+  .search {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: $light-grey;
+  }
+  .search-icon {
+    color: $secondary-color;
+  }
+  fa-icon {
+    color: $secondary-color;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .profile-card {
+    @include flexBox(row, space-between);
+    width: 120px;
+  }
+}
